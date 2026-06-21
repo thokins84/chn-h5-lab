@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>500彩票网官方 · 稳定入口与页面说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f3f5f7;
+      color: #1e2a3a;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    /* hero 卡片 – 主视觉 */
+    .hero-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      border: 1px solid #e6eaee;
+      padding: 2.5rem 2.8rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s;
+    }
+    .hero-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #0d1b2a;
+      margin-bottom: 0.75rem;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: #4a5c6e;
+      max-width: 680px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-link-sentence {
+      background: #f8fafc;
+      padding: 0.8rem 1.4rem;
+      border-radius: 12px;
+      display: inline-block;
+      border: 1px solid #dce2e9;
+      font-size: 0.98rem;
+    }
+    .hero-link-sentence a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .hero-link-sentence a:hover {
+      border-bottom-color: #1d4ed8;
+    }
+
+    /* 两列卡片网格 */
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e4e9ef;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.01);
+      padding: 1.8rem 1.8rem 2rem;
+      transition: transform 0.1s ease, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #142433;
+      margin-bottom: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .card h3::before {
+      content: "▍";
+      font-weight: 300;
+      color: #2563eb;
+      font-size: 1.3rem;
+      margin-right: 0.2rem;
+    }
+    .card p, .card li {
+      font-size: 0.95rem;
+      color: #2c3e50;
+    }
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .card ul li {
+      margin-bottom: 0.55rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .card ul li::before {
+      content: "—";
+      color: #7f8fa3;
+      flex-shrink: 0;
+      width: 1rem;
+    }
+
+    /* 第三张全宽卡片（适合人群+链接段落） */
+    .full-card {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e4e9ef;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      padding: 1.8rem 2rem 2.2rem;
+      margin-bottom: 1.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem 2.5rem;
+    }
+    .full-card .col {
+      flex: 1 1 240px;
+    }
+    .full-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #142433;
+      margin-bottom: 0.9rem;
+      border-left: 3px solid #2563eb;
+      padding-left: 0.8rem;
+    }
+    .full-card p, .full-card li {
+      color: #2c3e50;
+      font-size: 0.94rem;
+    }
+    .full-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .full-card ul li {
+      margin-bottom: 0.45rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .full-card ul li::before {
+      content: "·";
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+    }
+    .link-paragraph {
+      margin-top: 0.7rem;
+      padding: 0.6rem 1rem 0.6rem 0.8rem;
+      background: #f7f9fc;
+      border-radius: 10px;
+      border-left: 3px solid #1d4ed8;
+    }
+    .link-paragraph a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .link-paragraph a:hover {
+      text-decoration: underline;
+    }
+
+    /* FAQ 简化摘要 */
+    .faq-mini {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e4e9ef;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      margin-bottom: 1.5rem;
+    }
+    .faq-mini h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #142433;
+      margin-bottom: 1rem;
+      border-left: 3px solid #2563eb;
+      padding-left: 0.8rem;
+    }
+    .faq-item {
+      display: flex;
+      margin-bottom: 0.6rem;
+      font-size: 0.93rem;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #1e2a3a;
+      min-width: 7rem;
+      flex-shrink: 0;
+    }
+    .faq-a {
+      color: #3a4c5e;
+    }
+
+    /* 底部 */
+    .footer-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6a7b8c;
+      margin-top: 2.2rem;
+      border-top: 1px solid #dce2e9;
+      padding-top: 1.8rem;
+    }
+
+    @media (max-width: 680px) {
+      body { padding: 1.2rem 0.8rem; }
+      .hero-card { padding: 1.8rem 1.2rem; }
+      .hero-title { font-size: 1.6rem; }
+      .grid-2col { grid-template-columns: 1fr; gap: 1.2rem; }
+      .full-card { flex-direction: column; gap: 1.5rem; padding: 1.5rem; }
+      .faq-mini { padding: 1.2rem; }
+      .faq-item { flex-direction: column; margin-bottom: 0.9rem; }
+      .faq-q { min-width: unset; margin-bottom: 0.1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 主视觉卡片 -->
+  <div class="hero-card">
+    <h1 class="hero-title">500彩票网官方 · 信息入口说明</h1>
+    <p class="hero-sub">基于稳定访问结构，提供关于平台定位、功能场景与适用用户的概要说明。以下内容仅供了解页面用途，不构成任何建议。</p>
+    <div class="hero-link-sentence">
+      如有需求，可直接了解 <a href="https://chn-h5-500.com">500彩票网官方</a> 所提供的服务范围与界面说明。
+    </div>
+  </div>
+
+  <!-- 用途卡片 + 场景卡片 (两列) -->
+  <div class="grid-2col">
+    <div class="card">
+      <h3>主要用途</h3>
+      <ul>
+        <li>信息聚合与索引 — 集中展示相关彩票玩法、规则及常用数据。</li>
+        <li>页面引导 — 通过清晰的模块划分，快速定位所需内容。</li>
+        <li>官方说明承载 — 所有介绍均围绕 <a href="https://chn-h5-500.com" style="color:#1d4ed8; text-decoration:underline;">500彩票网官方</a> 的结构展开，保持信息一致性。</li>
+        <li>浏览辅助 — 提供常见问题摘要、人群适配说明，减少检索成本。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>典型场景</h3>
+      <ul>
+        <li>用户初次接触平台概念，希望了解整体框架与定位。</li>
+        <li>需要快速查阅玩法分类、规则简述及官方说明入口。</li>
+        <li>运营或内容参考场景 — 梳理官方信息卡片，用于内部说明或展示。</li>
+        <li>移动端轻浏览 — 卡片结构适配手机，信息密度适中，无需频繁跳转。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 适合人群 + 自然链接段落 (全宽卡片) -->
+  <div class="full-card">
+    <div class="col">
+      <h3>适合人群</h3>
+      <ul>
+        <li>对彩票玩法有基础了解、需要系统查阅规则的用户。</li>
+        <li>关注官方信息一致性、重视页面稳定性的浏览者。</li>
+        <li>内容编辑或产品运营，希望快速整理平台说明材料。</li>
+        <li>技术评估场景 — 测试页面结构、响应式表现与信息层级。</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>信息说明 · 链接段落</h3>
+      <p>本页面作为功能介绍卡片，所有内容均基于 <a href="https://chn-h5-500.com">500彩票网官方</a> 的公开信息结构进行整理。表格、卡片、摘要仅用于展示页面组织方式，不包含任何预测或推荐内容。如需获取完整规则或最新说明，建议直接参照官方页面原文。</p>
+      <div class="link-paragraph">
+        <strong>稳定入口：</strong> 若需直接访问平台首页，可使用 <a href="https://chn-h5-500.com">500彩票网官方</a> 链接。该地址为当前功能说明所依据的主要页面入口。
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="faq-mini">
+    <h3>常见问题 · 摘要</h3>
+    <div class="faq-item">
+      <span class="faq-q">页面用途是什么？</span>
+      <span class="faq-a">用作官方介绍的卡片式说明，围绕平台特点、使用人群、信息结构展开，不含操作引导。</span>
+    </div>
+    <div class="faq-item">
+      <span class="faq-q">内容是否实时更新？</span>
+      <span class="faq-a">本页为静态说明，基于固定时间点整理，具体信息以 <a href="https://chn-h5-500.com" style="color:#1d4ed8;">500彩票网官方</a> 实时页面为准。</span>
+    </div>
+    <div class="faq-item">
+      <span class="faq-q">如何理解“稳定入口”？</span>
+      <span class="faq-a">此处指使用固定链接指向官方首页，便于识别和引用，不涉及任何技术保障承诺。</span>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <div class="footer-note">
+    信息卡片式介绍 · 仅供页面结构参考 · 内容基于 <a href="https://chn-h5-500.com" style="color:#1d4ed8; text-decoration:none;">500彩票网官方</a>
+  </div>
+</div>
+</body>
+</html>
